@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    /* Runtime: Bun runs TypeScript directly, so tsc only type-checks and never emits */
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "types": ["bun"],
+
+    /* Drop Calf policy defaults: enforced on update */
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"]
+}

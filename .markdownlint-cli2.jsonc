@@ -1,0 +1,19 @@
+{
+  // node_modules is installed, and vendor/ is a nested checkout that brings
+  // its own linting configuration; neither is ours to police.
+  "ignores": ["**/node_modules/**", "vendor/**"],
+  // MD013 (line-length) can't reasonably apply to Markdown tables or code
+  // blocks: wrapping a table cell or a shell command at 80 columns breaks
+  // the content it's meant to check. Prose lines, quotes included, are
+  // wrapped by hand instead.
+  //
+  // MD032 (blanks-around-lists) is off because Biome formats Markdown and
+  // removes the blank line between a paragraph and the list that follows it.
+  "config": {
+    "MD032": false,
+    "MD013": {
+      "tables": false,
+      "code_blocks": false
+    }
+  }
+}

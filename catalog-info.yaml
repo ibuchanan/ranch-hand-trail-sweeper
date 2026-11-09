@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "ranch-hand-trail-sweeper"
+  title: "ranch-hand-trail-sweeper"
+  description: ""
+  annotations:
+    # Shared metadata for other modules lives here under forge-ranch/*.
+    # Package names may contain characters that catalog identifiers cannot.
+    forge-ranch/package-name: "ranch-hand-trail-sweeper"
+    # OSS currently supports the pinned Apache-2.0 template only.
+    forge-ranch/license: Apache-2.0
+    # A single year or inclusive range; never advanced automatically by update.
+    forge-ranch/copyright-date: "2026"
+    # github.com/project-slug: organization/repository
+    # jira/project-key: PROJECT
+    # links:
+    #   - url: https://example.atlassian.net/browse/PROJECT
+    #     title: Jira
+    #   - url: https://github.com/organization/repository
+    #     title: GitHub
+spec:
+  type: "agent-skill"
+  lifecycle: experimental
+  owner: "user:default/ibuchanan"
